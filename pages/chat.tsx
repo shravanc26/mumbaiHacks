@@ -15,11 +15,10 @@ const Home: NextPage = () => {
         setSearchText("");
         setConvo([...convo, searchText])
     }
-
     return (
         <div className={styles.container}>
             <div className='absolute justify-center w-full h-full ml-auto'>
-                <div className='mx-auto h-[80vh] mt-20 overflow-y-scroll border-0'>
+                <div className='mx-auto h-[80vh] mt-20 overflow-y-scroll border-0 '>
                     {
                         convo && convo.map(con => {
                             return <TextTile author = {""} text = {con} />
@@ -46,7 +45,7 @@ const Home: NextPage = () => {
                         <input
                             type="text"
                             placeholder="Search"
-                            className="w-full h-16 text-xl py-3 pl-12 pr- border rounded-md outline-none border-1 border-gray shadow-lg"
+                            className="w-full h-16 text-xl py-3 pl-12 pr-2 border rounded-md outline-none border-gray shadow-xl"
                             value={searchText}
                             onChange={(e)=>setSearchText(e.target.value)}
                         />
@@ -61,7 +60,9 @@ const Home: NextPage = () => {
 
 const TextTile = ({author, text}) => {
     if(text == '') return <div></div>
-    return <div className='w-1/2 mx-auto p-10'>{author} {text}</div>
+    return <div className='w-full bg-grey border-b border-y-white'>
+            <div className='w-1/2 mx-auto p-5 py-10 text-lg text-black'>{author} {text}</div>
+        </div>
 }
 
 
