@@ -34,10 +34,10 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'primary': '#3B475C',
-      'secondary': '#0052cc21',
+      'primary': '#10172a',
+      'secondary': '#DEE2E7',
       'gray': '#a7a6aa',
-      'grey': '#EEEEEE',
+      'grey': '#f8fafc',
       'bgc': 'rgba(143, 146, 161, 0.05)',
       'white': '#FFFFFF',
       'green': '#22c55e',

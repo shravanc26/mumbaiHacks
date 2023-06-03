@@ -27,7 +27,7 @@ export default function Navbar() {
     const toogle = () => { setShow(!show); }
     return (
         <div>
-            <nav className="bg-dark shadow-lg text-white fixed z-10 top-0 w-full">
+            <nav className=" shadow-lg text-white fixed z-10 top-0 w-full">
                 <div className="">
                     <div className="flex py-2 px-2">
                         <div className="w-4/5">
@@ -36,9 +36,9 @@ export default function Navbar() {
                             </a>
                         </div>
                             <div className="hidden px-24 md:flex justify-evenly space-x-1 text-lg w-1/5">
-                                <a href="/" onClick={()=> router.push("/")} className="py-4 px-2   hover:text-green-500 transition duration-300">Home</a>
-                                <a href="/lawyers" className="py-4 px-2 hover:text-green-500 transition duration-300">Lawyers</a>
-                                <a href="/about" className="py-4 px-2 hover:text-green-500 transition duration-300">About</a>
+                                <a href="/" onClick={()=> router.push("/")} className="py-4 px-2   hover:text-green-500 transition duration-300 font-mono"> <p className="text-primary font-medium">Home</p></a>
+                                <a href="/lawyers" className="py-4 px-2 hover:text-green-500 transition duration-300 text-primary font-medium font-mono">Lawyers</a>
+                                <a href="/about" className="py-4 px-2 hover:text-green-500 transition duration-300 text-primary font-medium font-mono">About</a>
                         </div>
                         <div className="flex justify-end px-4 space-x-5 w-4/5">
                             <div className="md:hidden flex items-center">
