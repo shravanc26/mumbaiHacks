@@ -38,6 +38,8 @@ module.exports = {
       'secondary': '#DEE2E7',
       'gray': '#a7a6aa',
       'grey': '#f8fafc',
+      'grey1': '#E1E1E2',
+
       'bgc': 'rgba(143, 146, 161, 0.05)',
       'white': '#FFFFFF',
       'green': '#22c55e',

@@ -30,7 +30,7 @@ export default function Search() {
           <input
             type="text"
             placeholder="Quick Search"
-            className="w-20vw h-16 text-lg py-3 pl-12 pr-4 rounded-md outline-none"
+            className="w-[25vw] h-16 text-lg py-3 pl-12 pr-4 rounded-md outline-none"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
             onFocus={(e) => { setOnFocused(true); setLoading(true) }}

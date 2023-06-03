@@ -4,34 +4,41 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Search from "../components/utils/search/search";
 import TextAnimation from "../components/utils/TextAnimation";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import { ParallaxProvider } from "react-scroll-parallax";
+
 
 const Home: NextPage = () => {
     return (
+        <ParallaxProvider scrollAxis="horizontal">
         <div className={styles.container}>
             <div className='bg-secondary m-auto relative w-[97vw] h-[90vh] mt-[6rem] rounded-lg' >
-                {/* <div className='opacity-500'>
-                    <Image src='/bg1.png' className='bg-blend-normal ' layout="fill" />
-                </div> */}
                 <div className='absolute top-[10vh] ml-16 w-[70vw]'>
                     <TextAnimation />
                 </div>
                 <div className='relative top-[55vh] flex justify-center'>
-                    <div>
-                    <button type="button" className="drop-shadow-2xl text-white bg-primary rounded-lg p-4 px-5 text-lg hover:">Get started</button>
-                    </div>
                     <Search />
                 </div>
             </div>
+            <Player
+                autoplay
+                loop
+                src="https://lottie.host/8edfd056-bb80-4de1-8d1f-615cde33e5a0/bEZ6c7Q6tb.json"
+                style={{ height: '1000px', width: '900px' }}
+                className='absolute top-20 right-10'
+            >
+            </Player>
             <div>
                 <div>
                     <span>Features</span>
                 </div>
                 <div>
                     <div className="max-w-sm w-full lg:max-w-full lg:flex">
-                        </div>
+                    </div>
                 </div>
-            </div>
+             </div>
         </div>
+        </ParallaxProvider>
     )
 }
 
