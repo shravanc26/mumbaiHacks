@@ -7,9 +7,10 @@ import Search from "../components/utils/search/search";
 const Home: NextPage = () => {
     return (
         <div className={styles.container}>
-            hgvjh
+            sfsdf
         </div>
     )
 }
+
 
 export default Home
