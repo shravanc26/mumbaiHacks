@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 const  TextAnimation = () => {
   return (
     <span style={{ fontSize: '6vw' }}>
-    <span className='font-extrabold'>Mumbai Hacks can</span>{' '}
+    <span className='font-extrabold'>LawAi can</span>{' '}
     <TypeAnimation
       sequence={[
         'help you for finding lawyers!',
@@ -11,8 +11,6 @@ const  TextAnimation = () => {
         'assist you!',
         1000,
         'answers your queries!',
-        1000,
-        'Chinchillas!',
         1000,
       ]}
       repeat={Infinity}

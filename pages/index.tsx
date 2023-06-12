@@ -28,15 +28,7 @@ const Home: NextPage = () => {
                 className='absolute top-20 right-10'
             >
             </Player>
-            <div>
-                <div>
-                    <span>Features</span>
-                </div>
-                <div>
-                    <div className="max-w-sm w-full lg:max-w-full lg:flex">
-                    </div>
-                </div>
-             </div>
+           
         </div>
         </ParallaxProvider>
     )

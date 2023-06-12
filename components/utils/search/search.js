@@ -1,13 +1,19 @@
 import React, { useState } from 'react'
 import PastSearch from './pastSearch'
+import { useRouter } from 'next/router';
 
 export default function Search() {
   const [searchText, setSearchText] = useState('');
   const [onFocused, setOnFocused] = useState(false);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
   const formSubmit = () => {
     event.preventDefault();
-    console.log(searchText)
+    console.log(searchText);
+    router.push({
+      pathname: '/chat',
+      query: {text:searchText, },
+  });
   }
   return (
     <div>

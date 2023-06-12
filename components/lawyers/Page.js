@@ -8,8 +8,8 @@ import Image from 'next/image'
 import { useRouter } from 'next/router';
 
 const LawyerCard = ({ id, name, email, phone, specialization, experience, location, cases_handled, rating, reviews, image }) => {
-    console.log(image)
-    console.log(rating);
+    // console.log(image)
+    // console.log(rating);
     const router = useRouter();
     const click = () => {
         router.push({

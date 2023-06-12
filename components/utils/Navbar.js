@@ -14,14 +14,14 @@ export default function Navbar() {
                 <div className="">
                     <div className="flex py-2 px-2">
                         <div className="w-4/5">
-                            <a href="#" className="flex items-center py-4 px-5">
-                                <Image src="/logo.png" alt="me" width="90" height="25" />
+                            <a href="#"  className="absolute top-2 left-8">
+                                <Image src="/logo.png" alt="me" width="130" height="70" />
                             </a>
                         </div>
                             <div className="hidden px-24 md:flex justify-evenly space-x-1 text-lg w-1/5">
                                 <a href="/" onClick={()=> router.push("/")} className="py-4 px-2   hover:text-green-500 transition duration-300 hover:text-gray">Home</a>
                                 <a href="/lawyers" className="py-4 px-2   hover:text-green-500 transition duration-300 hover:text-gray">Lawyers</a>
-                                <a href="/about" className="py-4 px-2   hover:text-green-500 transition duration-300 hover:text-gray">About</a>
+                                <a href="/chat" className="py-4 px-2   hover:text-green-500 transition duration-300 hover:text-gray">Chat</a>
                         </div>
                         <div className="flex justify-end px-4 space-x-5 w-4/5">
                             <div className="md:hidden flex items-center">
@@ -48,8 +48,7 @@ export default function Navbar() {
                     <ul>
                         <li className="active"><a href="index.html" className="block text-sm px-2 py-4 text-black bg-green-500 font-semibold">Home</a></li>
                         <li><a href="#services" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
-                        <li><a href="#about" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
-                        <li><a href="#contact" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
+                        <li><a href="#chat" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Chat</a></li>
                     </ul>
                 </div>
                 }

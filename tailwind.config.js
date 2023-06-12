@@ -39,6 +39,7 @@ module.exports = {
       'gray': '#a7a6aa',
       'grey': '#f8fafc',
       'grey1': '#E1E1E2',
+      'grey2' : '#EFEFEF',
 
       'bgc': 'rgba(143, 146, 161, 0.05)',
       'white': '#FFFFFF',
@@ -46,6 +47,7 @@ module.exports = {
       'red': '#f43f5e',
       'lightg': '#F1F8FA',
       'darkg': '#EDF1F8',
+      'blue' : '#4284f3',
     },
     fontFamily: {
       'fontPrimary': ['"fontPrimary"', 'lexend']

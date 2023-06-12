@@ -3,15 +3,11 @@ import Image from 'next/image'
 
 export default function PastSearch() {
     const data = [ 
-        'How to murder someone',
+        'My business partner ran away',
         'What to do , I crashed some car',
-        'I hit the police man',
-        'Hello, what to do?',
-        'How to murder someone',
+        'My business partner ran away',
         'What to do , I crashed some car',
-        'I hit the police man',
         'Hello, what to do?',
-        'How to murder someone',
     ];
     const List = ({question}) => {
         return(
